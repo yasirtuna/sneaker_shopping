@@ -1,0 +1,73 @@
+name: sneaker_shopping_prokit
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 2.0.0
+
+environment:
+  sdk:  '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  #Posgres Database  
+  postgres: ^3.2.0
+  flutter_dotenv: ^5.1.0
+  supabase_flutter: ^2.5.3
+   # Routing
+  auto_route: ^4.2.1
+  # Dependency injection
+  injectable: ^1.5.3
+  get_it: ^7.2.0
+
+  # Base
+  cupertino_icons: ^1.0.6
+  nb_utils: ^7.0.0
+  intl: ^0.18.1
+  flutter_vector_icons: ^2.0.0
+  google_fonts: ^6.2.1
+
+  # Sneaker Shopping App
+  mobx: ^2.2.0
+  flutter_mobx: ^2.1.0
+  schema_dart: ^0.0.5
+
+dependency_overrides:
+  intl: ^0.18.1
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mobx_codegen: ^2.4.0
+  build_runner: ^2.4.6
+
+
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "images/sneakerShopping/ic_sneaker_logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+   - images/sneakerShopping/
+
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+
+  

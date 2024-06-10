@@ -1,0 +1,103 @@
+CREATE TABLE "accountmodel" (
+  "id" SERIAL PRIMARY KEY,
+  "name" TEXT NOT NULL
+);
+
+CREATE TABLE "allcart" (
+  "id" SERIAL PRIMARY KEY,
+  "name" TEXT NOT NULL,
+  "subtitle" TEXT NOT NULL,
+  "img" TEXT NOT NULL,
+  "amount" TEXT NOT NULL
+);
+
+CREATE TABLE "alldata" (
+  "id" SERIAL PRIMARY KEY,
+  "name" TEXT NOT NULL,
+  "subtitle" TEXT NOT NULL,
+  "img" TEXT NOT NULL,
+  "amount" TEXT NOT NULL
+);
+
+CREATE TABLE "favoritemodel" (
+  "id" SERIAL PRIMARY KEY,
+  "name" TEXT NOT NULL,
+  "subtitle" TEXT NOT NULL,
+  "img" TEXT NOT NULL,
+  "amount" TEXT NOT NULL
+);
+
+CREATE TABLE "paymentmodel" (
+  "id" SERIAL PRIMARY KEY,
+  "name" TEXT NOT NULL,
+  "img" TEXT NOT NULL
+);
+
+CREATE TABLE "productmodel" (
+  "id" SERIAL PRIMARY KEY,
+  "name" TEXT NOT NULL
+);
+
+CREATE TABLE "searchmodel" (
+  "id" SERIAL PRIMARY KEY,
+  "name" TEXT NOT NULL,
+  "subtitle" TEXT NOT NULL,
+  "img" TEXT NOT NULL
+);
+
+CREATE TABLE "shoppingmodel" (
+  "id" SERIAL PRIMARY KEY,
+  "name" TEXT NOT NULL
+);
+
+INSERT INTO accountmodel (name) VALUES
+    ('My Order'),
+    ('Vouchers'),
+    ('Shopping Address'),
+    ('FAQ'),
+    ('Customer Services'),
+    ('Setting');
+
+INSERT INTO paymentmodel (name, img) VALUES
+    ('Payment Option', 'images/sneakerShopping/ic_payment.png'),
+    ('Credit/Debit Card', 'images/sneakerShopping/ic_MasterCard.png'),
+    ('Paypal', 'images/sneakerShopping/ic_paypal.png');
+
+INSERT INTO shoppingmodel (name) VALUES
+    ('New Arrival'),
+    ('Men'),
+    ('Women'),
+    ('Kids'),
+    ('Sale');
+
+INSERT INTO productmodel (name) VALUES
+    ('All Shoes'),
+    ('Top & T-Shirt'),
+    ('Caps'),
+    ('Accessories');
+
+INSERT INTO alldata (name, subtitle, img, amount) VALUES
+    ('Nike Air VaporMax Evo', 'Men''s shoes', 'images/sneakerShopping/ic_shoes_5.png', '$300.00'),
+    ('Nike Air VaporMax Evo', 'Women''s shoes', 'images/sneakerShopping/ic_shoes_1.png', '$200.00'),
+    ('Nike Air VaporMax Evo', 'Nike Air Huarache', 'images/sneakerShopping/ic_shoes_3.png', '$250.00'),
+    ('Nike Air VaporMax Evo', 'men''s shoes', 'images/sneakerShopping/ic_shoes_4.png', '$350.00'),
+    ('Nike Air VaporMax Evo', 'Nike Air Huarache', 'images/sneakerShopping/ic_shoes_5.png', '$400.00'),
+    ('Nike Air VaporMax Evo', 'men''s shoes', 'images/sneakerShopping/ic_shoes_6.png', '$300.00'),
+    ('Nike Air VaporMax Evo', 'men''s shoes', 'images/sneakerShopping/ic_shoes_8.png', '$100.00');
+
+INSERT INTO favoritemodel (name, subtitle, img, amount) VALUES
+    ('Nike Air VaporMax Evo', 'Men''s shoes', 'images/sneakerShopping/ic_shoes_3.png', '$300.00'),
+    ('Nike Air VaporMax Evo', 'Women''s shoes', 'images/sneakerShopping/ic_shoes_10.png', '$200.00'),
+    ('Nike Air VaporMax Evo', 'Nike Air Huarache', 'images/sneakerShopping/ic_shoes_11.png', '$250.00');
+
+INSERT INTO allcart (name, subtitle, img, amount) VALUES
+    ('Nike Air VaporMax Evo', 'Men''s shoes', 'images/sneakerShopping/ic_shoes_11.png', '$300.00'),
+    ('Nike Air VaporMax Evo', 'Women''s shoes', 'images/sneakerShopping/ic_shoes_4.png', '$200.00'),
+    ('Nike Air VaporMax Evo', 'Nike Air Huarache', 'images/sneakerShopping/ic_shoes_1.png', '$250.00');
+
+INSERT INTO searchmodel (name, subtitle, img) VALUES
+    ('Top & T-Shirt Collection', '25% OFF', 'images/sneakerShopping/ic_arrivals_4.jpg'),
+    ('Top & T-Shirt Collection', '30% OFF', 'images/sneakerShopping/ic_arrivals_2.jpg'),
+    ('Top & T-Shirt Collection', '70% OFF', 'images/sneakerShopping/ic_arrivals_3.jpg'),
+    ('Top & T-Shirt Collection', '55% OFF', 'images/sneakerShopping/ic_arrivals_4.jpg'),
+    ('Top & T-Shirt Collection', '35% OFF', 'images/sneakerShopping/ic_arrivals_5.jpg');
